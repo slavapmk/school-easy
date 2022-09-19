@@ -17,7 +17,7 @@ int itc_str(int a, int b, int c) {
     if (a < 0)return -1;
     if (b < 0)return -1;
     if (c < 0)return -1;
-    int p = a + b + c;
+    int p = (a + b + c)/2;
     return itc_sqrt(p * (p - a) * (p - b) * (p - c));
 }
 
