@@ -1,7 +1,7 @@
 #include "easy.h"
 
 int itc_pow(int a, int n) {
-    if (n < 0) return -1;
+    if (n < 0 || a <= 0) return -1;
     int result = 1;
     for (int i = 0; i < n; ++i) {
         result *= a;
@@ -11,7 +11,7 @@ int itc_pow(int a, int n) {
 }
 
 int itc_sqrt(int num) {
-    if (num <= 0) return -1;
+    if (num <= 0 || num > 46340) return -1;
     int i = 0;
     while (i * i <= num)
         i += 1;
