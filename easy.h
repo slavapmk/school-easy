@@ -3,6 +3,8 @@
 
 #include <iostream>
 
+#define MAX_INT 2147483647
+#define MAX_SQRT 46340
 using namespace std;
 
 void itc_name();
