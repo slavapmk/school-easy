@@ -5,13 +5,13 @@ int itc_pow(int a, int n) {
     int result = 1;
     for (int i = 0; i < n; ++i) {
         result *= a;
-        if (2147483647 - result < a) return -1;
+        if (MAX_INT - result < a) return -1;
     }
     return result;
 }
 
 int itc_sqrt(int num) {
-    if (num <= 0 || num > 46340) return -1;
+    if (num <= 0 || num > MAX_SQRT) return -1;
     int i = 0;
     while (i * i <= num)
         i += 1;
