@@ -8,9 +8,10 @@ int itc_pow(int a, int n) {
 }
 
 int itc_sqrt(int num) {
-    for (int i = 0; i * i <= num; ++i)
-        if (i * i == num) return i;
-    return -1;
+    int i = 0;
+    while (i * i <= num)
+        i += 1;
+    return i - 1;
 }
 
 int itc_abs(int input) {
