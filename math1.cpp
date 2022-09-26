@@ -11,11 +11,10 @@ int itc_pow(int a, int n) {
 }
 
 int itc_sqrt(int num) {
-    if (num <= 0 || num > MAX_SQRT) return -1;
-    int i = 0;
-    while (i * i <= num)
-        i += 1;
-    return i - 1;
+    if (num >= 0 && num <= MAX_SQRT)
+        for (int i = 0; i * i <= num; ++i)
+            if (i * i == num) return i;
+    return -1;
 }
 
 
