@@ -24,7 +24,7 @@ int itc_abs(int input) {
 }
 
 
-double itc_fabc(double input) {
+double itc_fabs(double input) {
     return input < 0 ? input * -1 : input;
 }
 
